@@ -40,7 +40,18 @@ CArena::CArena(Tipo_tablero _alto, Tipo_tablero _ancho){
 }
 
 void CArena::generar_puntos(){
+    ifstream fi;
+    fi.open("direccion del archivo");
+    if(fi.is_open()){//abre el archivo
+        int alto, ancho, cantidad;
+        fi>>alto>>ancho>>cantidad;//almacena solo los tres primeros
+        while(!fi.eof()){//bucle que recorre los puntos de los obstaculos
+            int a;
+            fi>>a;//iterador que va por todos los puntos de los obstaculos
 
+        }
+    }
+    fi.close();
 }
 
 Tipo_tablero CArena:: getalto(){return alto;}
