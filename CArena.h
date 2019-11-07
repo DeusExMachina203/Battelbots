@@ -23,7 +23,7 @@ public:
     Tipo_tablero getalto();
     Tipo_tablero getancho();
     void imprimir_Tab();
-    void encaminar_bot(Tipo_tablero pos);
+    void encaminar_bot(Tipo_tablero pos, vector<Tipo_tablero> Labierta, vector<Tipo_tablero> Lcerrada);
     bool comprobador(vector<Tipo_tablero> lista_cerrada, Tipo_tablero num);
     void removedor (vector<Tipo_tablero> lista_abierta, Tipo_tablero num);
     void dibujar_camino(Tipo_tablero _alto, Tipo_tablero _ancho);
